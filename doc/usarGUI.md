@@ -31,5 +31,5 @@ para quitar el acceso cuando se han dejado de usar:
 xhost -local:root
 </pre>
 
-<a href="http://wiki.ros.org/docker/Tutorials/GUI">fuente</a>
+<a href="http://wiki.ros.org/docker/Tutorials/GUI" target="_blank">fuente</a>
 
