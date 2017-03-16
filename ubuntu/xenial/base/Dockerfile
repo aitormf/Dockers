@@ -1,13 +1,14 @@
 # Own Ubuntu base
 FROM ubuntu:xenial
 
-MAINTAINER Aitor Martínez Fernández+aitor-martinez.fernandez@gmail.com
+LABEL manteiner Aitor Martínez Fernández+aitor-martinez.fernandez@gmail.com
 
 
 # install basic packages
 RUN apt update && apt install -q -y \
     wget \
     sudo \
+    nano \
     && rm -rf /var/lib/apt/lists/*
 
 # install graphics packages
