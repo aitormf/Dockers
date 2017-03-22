@@ -9,6 +9,7 @@ RUN apt update && apt install -q -y \
     wget \
     sudo \
     nano \
+    bash-completion \
     && rm -rf /var/lib/apt/lists/*
 
 # install graphics packages
