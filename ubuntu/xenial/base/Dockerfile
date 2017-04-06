@@ -20,7 +20,14 @@ RUN apt update && apt install -q -y \
     x-window-system\
     && rm -rf /var/lib/apt/lists/*
 
-# install gedit
-RUN apt update && apt install -q -y \
-    gedit \
-    && rm -rf /var/lib/apt/lists/*
+# install sublime
+RUN wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb \
+    && dpkg -i sublime-text_build-3126_amd64.deb \
+    && rm sublime-text_build-3126_amd64.deb
+
+# Enabling bash-completion
+COPY ./completion /tmp/
+
+RUN cat /tmp/completion >> /etc/bash.bashrc
+
+
