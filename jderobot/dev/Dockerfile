@@ -10,9 +10,15 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 421C365BD9FF1F717815
 RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
 
 ## ZeroC ##
-RUN sh -c 'echo deb http://zeroc.com/download/apt/ubuntu16.04 stable main > /etc/apt/sources.list.d/zeroc.list'
+RUN echo deb http://zeroc.com/download/apt/ubuntu16.04 stable main > /etc/apt/sources.list.d/zeroc.list
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 5E6DA83306132997
+
+## Gazebo ##
+
+RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable xenial main" > /etc/apt/sources.list.d/gazebo-stable.list
+
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key 67170598AF249743
 
 
 ## JdeRobot ##
