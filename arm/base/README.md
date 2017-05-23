@@ -10,7 +10,8 @@ It contains:
 
 Before to exec this image you should run:
 
-```apt-get update && apt-get install -y --no-install-recommends \
+```
+apt-get update && apt-get install -y --no-install-recommends \
     qemu \
     qemu-user-static \
     binfmt-support
