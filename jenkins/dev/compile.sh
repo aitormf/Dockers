@@ -14,7 +14,7 @@ function check_result {
 source /opt/ros/kinetic/setup.bash
 
 mkdir build && cd build
-cmake ..
+cmake .. $*
 check_result
 
 make -j6
