@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <include file="$(find kobuki_node)/launch/robot_with_tf.launch"/>
+  <include file="$(find realsense_camera)/launch/r200_nodelet_default.launch"/>
+
+</launch>
